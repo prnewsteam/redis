@@ -1,9 +1,9 @@
 ### Create the image
 
 ```
-docker buildx build --platform linux/arm64 -t prnewsio/arm64-redis:latest --force-rm --no-cache .
+docker buildx build --platform linux/arm64 -t prnewsio/redis:latest.arm --force-rm --no-cache .
 docker login -u="\$DOCKER_USERNAME" -p="\$DOCKER_PASSWORD"
-docker push prnewsio/arm64-redis:latest
+docker push prnewsio/arm64-redis:latest.arm
 ```
 
 ### Run with docker-compose
